@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pl" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Wspólnoty</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+</head>
+<body>
+
+<h2>Wspólnoty mieszkaniowe</h2>
+
+<ul>
+<!--    wyswietlenie listy wspolnot-->
+    <li th:each="wspolnota: ${wspolnoty}">
+<!--        prowadzi do wspolnoty o id-->
+        <a th:href="'/wspolnota/' + ${wspolnota.id}" th:text="|${wspolnota.name} (${wspolnota.budynki.size()})|"></a>
+<!--        wyświetlanie listy budynkow i ilości w danej wspolnocie-->
+    </li>
+</ul>
+
+<!--dodawanie budynku-->
+
+</body>
+</html>

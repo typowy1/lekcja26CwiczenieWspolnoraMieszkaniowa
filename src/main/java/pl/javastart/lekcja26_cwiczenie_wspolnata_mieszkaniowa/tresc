@@ -1,0 +1,29 @@
+Wspólnoty mieszkaniowe
+Treść zadania
+
+Przyszedł do Ciebie znajomy zajmujący się zarządzaniem wspólnotami mieszkaniowymi. Aktualnie całą dokumentację prowadzi w excelu, ale chciałby ułatwić sobie życie i potrzebuje dedykowanej platformy.
+
+Twoim zadaniem jest jej stworzenie. Poniżej znajdziesz opis wymagań znajomego:
+
+Wspólnota reprezentuje jeden lub kilka budynków mieszkalnych, z których każdy posiada dowolną liczbę mieszkań.
+
+Każda wspólnota posiada swoją nazwę. Nazwą najczęściej jest adres (jeśli wspólnota to tylko jeden budynek).
+
+Do wspólnoty może należeć dowolna liczba mieszkań. Mieszkanie posiada numer, powierzchnię oraz liczniki. Aplikacja powinna przechowywać informacje o numerze licznika oraz historię odczytów.
+
+Zaproponuj własny interfejs aplikacji. Postaraj się stworzyć ją tak, żeby wygodnie się z niej korzystało. Powinny znaleźć się w niej następujące funkcjonalności:
+
+    Zarządzanie wspólnotami
+        dodawanie, edycja, usuwanie, wyświetlanie
+        suma powierzchni wszystkich mieszkań
+    Zarządzanie mieszkaniami
+        dodawanie, edycja, usuwanie, wyświetlanie
+        dodawanie mieszkania do wspólnoty
+        wyświetlanie jaki % powierzchni całej wspólnoty stanowi mieszkanie
+    Zarządzanie licznikami
+        dodawanie, edycja, usuwanie, wyświetlanie
+        dodawanie odczytu
+        historia odczytów dla licznika
+
+
+pierw wstawiamy encje klasy kazda encja to tabele

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pl" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Wspólnoty</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+</head>
+<body>
+
+<h2>Dodaj budynek</h2>
+
+<FORM method="post" action="budynek/dodaj" th:object="${budynek}">
+    <input type="text" th:field="*{ulica}" placeholder="Ulica"/>
+    <input type="text" th:field="*{numerDomu}" placeholder="Nr domu"/>
+    <select th:field="*{wspolnota}">
+        <option th:each="wspolnota: ${wspolnoty}" th:text="${wspolnota.name}" th:value="${wspolnota.id}"></option>
+    </select>
+    <input type="submit" value="Dodaj!"/>
+
+</FORM>
+
+</body>
+</html>
